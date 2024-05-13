@@ -668,7 +668,8 @@
     var isTimeout = (HttpHandler._UNDERLYING_ERROR_CODES.NSURLErrorTimedOut === underlyingErrorCode);
 
     reqContext.status = 0;
-    reqContext.statusText = reqContext.responseText = null;
+    reqContext.statusText = null;
+    reqContext.responseText = error;
 
     reqContext.dispatchReadyStateChangeEvent(2); //HEADERS_RECEIVED
     reqContext.dispatchReadyStateChangeEvent(3); //LOADING
