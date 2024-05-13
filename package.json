@@ -1,6 +1,6 @@
 {
-  "name": "cordova-plugin-wkwebview-file-xhr",
-  "version": "3.1.1",
+  "name": "@cloudscapelabs/cordova-plugin-wkwebview-file-xhr",
+  "version": "3.1.1-csl1",
   "description": "Cordova WKWebView File XHR Plugin",
   "cordova": {
     "id": "cordova-plugin-wkwebview-file-xhr",
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/oracle/cordova-plugin-wkwebview-file-xhr"
+    "url": "https://github.com/cloudscapelabs/cordova-plugin-wkwebview-file-xhr"
   },
   "keywords": [
     "cordova",
