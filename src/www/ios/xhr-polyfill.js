@@ -667,17 +667,8 @@
   {
     var isTimeout = (HttpHandler._UNDERLYING_ERROR_CODES.NSURLErrorTimedOut === underlyingErrorCode);
 
-    if (isTimeout)
-    {
-      reqContext.status = 0;
-      reqContext.statusText = reqContext.responseText = null;
-    }
-    else
-    {
-      reqContext.status = 400;
-      reqContext.statusText = "Bad Request";
-      reqContext.responseText = error;
-    }
+    reqContext.status = 0;
+    reqContext.statusText = reqContext.responseText = null;
 
     reqContext.dispatchReadyStateChangeEvent(2); //HEADERS_RECEIVED
     reqContext.dispatchReadyStateChangeEvent(3); //LOADING
